@@ -8,7 +8,7 @@ body {
 #header-nav {
   padding: 0;
   margin: 0;
-  height: 80px;
+  /*height: 80px;*/
   background-color: #0f3c81;
   border: 0;
   border-radius: 0;
@@ -47,13 +47,14 @@ button {
 .navbar-toggle {
   background-color: #1f1e1e;
   border-color: #ffffff;
+  margin-bottom:40px;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #0f3c81;
 }
 .navbar-default .navbar-toggle:hover {
     background-color: #ffffff;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
 }
 .navbar-default .navbar-toggle:hover .icon-bar{
     background-color: #000000;
@@ -63,9 +64,7 @@ button {
   box-shadow: none;
   margin: 0;
   padding: 0;
-}
-#nav-list {
-  margin-top: 30px;
+  background-color: #1f1e1e;
 }
 #nav-list a {
   text-align: center;
