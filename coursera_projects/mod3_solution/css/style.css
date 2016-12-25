@@ -46,6 +46,9 @@ button {
 .navbar-toggle {
   background-color: #1f1e1e;
 }
+.navbar-toggle .collapsed:hover {
+  background-color: #ffffff;
+}
 #collapsable-nav {
   border: none;
   box-shadow: none;
@@ -112,9 +115,10 @@ h2 {
     font-size: 1.2em;
     margin: 0;
     width: 100%;
+    text-transform: uppercase;
 }
 #collapsable-nav a:hover  {
-  background-color: #8b91a7;
+  background-color: #ffffff;
 }
 #collapsable-nav a span { /* Collapsed nav menu glyph */
     font-size: 1em;
