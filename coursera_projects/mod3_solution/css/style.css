@@ -1,0 +1,125 @@
+body {
+  font-size: 16px;
+  color: #02101f;
+  background-color: #F3F3F3;
+  font-family: 'PT Sans', sans-serif;
+}
+/** HEADER **/
+#header-nav {
+  padding: 0;
+  margin: 0;
+  height: 80px;
+  background-color: #0f3c81; /* header color green-gray */
+  border: 0;
+  border-radius: 0;
+}
+.container {
+  margin: 0;
+  padding: 0;
+}
+.navbar-header, .navbar-brand {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.navbar-brand h1 {
+  width: 150px;
+  font-size: 1.5em;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #eef9ec;
+}
+.navbar-brand h1:hover {
+  text-decoration: none;
+}
+button {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+}
+.navbar-toggle {
+  background-color: #1f1e1e;
+}
+#collapsable-nav {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+#nav-list {
+  margin-top: 30px;
+}
+#nav-list a {
+  text-align: center;
+}
+
+
+/** END HEADER **/
+
+/** MAIN PAGE **/
+h2 {
+  font-size: 3em;
+  color: #02101f;
+}
+
+#main-content div {
+  margin: 15px 20px 50px;
+  padding: 0 20px 20px;
+  background-color: rgba(15, 60, 129, 0.4);
+  position: relative;
+}
+
+#main-content h3 {
+  padding: 20px 0 10px;
+  font-size: 1.5em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.return-top a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: .8em;
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  margin-top: 10px;
+}
+.return-top a:hover {
+  color: #2e2e2e;
+}
+
+/**** Medium to Large devices only ****/
+@media (min-width: 992px) {
+
+}
+
+/**** Small devices only ****/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/**** Extra small devices only ****/
+@media (max-width: 767px) {
+
+#collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    margin: 0;
+    width: 100%;
+}
+#collapsable-nav a:hover  {
+  background-color: #8b91a7;
+}
+#collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 15px;
+}
+#main-content div {
+  margin-right: 50px;
+  margin-left: 50px;
