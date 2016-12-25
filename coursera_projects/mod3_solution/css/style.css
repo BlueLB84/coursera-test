@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   height: 80px;
-  background-color: #0f3c81; /* header color green-gray */
+  background-color: #0f3c81;
   border: 0;
   border-radius: 0;
 }
@@ -34,6 +34,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: #eef9ec;
+  text-shadow: 1px 2px 1px #000000;
 }
 .navbar-brand h1:hover {
   text-decoration: none;
@@ -45,6 +46,17 @@ button {
 }
 .navbar-toggle {
   background-color: #1f1e1e;
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #0f3c81;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+.navbar-default .navbar-toggle:hover .icon-bar{
+    background-color: #000000;
 }
 
 #collapsable-nav {
@@ -66,7 +78,7 @@ button {
 /** MAIN PAGE **/
 h2 {
   font-size: 3em;
-  color: #02101f;
+  color: #1f1e1e;
 }
 
 #main-content div {
@@ -109,6 +121,9 @@ h2 {
 /**** Extra small devices only ****/
 @media (max-width: 767px) {
 
+.navbar-toggle:hover {
+  background-color: #ffffff;
+}
 #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
     margin: 0;
