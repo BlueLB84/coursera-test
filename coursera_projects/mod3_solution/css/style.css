@@ -71,6 +71,9 @@ button {
 /** END HEADER **/
 
 /** MAIN PAGE **/
+#main-content {
+  background-color: #c7c7c8;
+}
 h2 {
   font-size: 3em;
   color: #1f1e1e;
