@@ -58,7 +58,6 @@ button {
 .navbar-default .navbar-toggle:hover .icon-bar{
     background-color: #000000;
 }
-
 #collapsable-nav {
   border: none;
   box-shadow: none;
@@ -71,8 +70,6 @@ button {
 #nav-list a {
   text-align: center;
 }
-
-
 /** END HEADER **/
 
 /** MAIN PAGE **/
@@ -80,14 +77,12 @@ h2 {
   font-size: 3em;
   color: #1f1e1e;
 }
-
 #main-content div {
-  margin: 15px 20px 50px;
-  padding: 0 20px 20px;
+  margin: 15px 40px 50px;
+  padding: 0 30px 20px;
   background-color: rgba(15, 60, 129, 0.4);
   position: relative;
 }
-
 #main-content h3 {
   padding: 20px 0 10px;
   font-size: 1.5em;
