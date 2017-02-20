@@ -1,0 +1,8 @@
+// this is a string sitting on the 'server'.  you know it's json because all of the property names are in double quotes
+
+{
+  "firstName": "L",
+  "lastName": "Barbee-Vargas",
+  "likesChineseFood": true,
+  "numberOfDisplays": 2
+}

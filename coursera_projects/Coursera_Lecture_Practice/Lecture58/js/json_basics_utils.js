@@ -1,4 +1,5 @@
 // ajax library:
+
 (function (global) {
 
 // Set up a namespace for our utility
@@ -23,11 +24,11 @@ function getRequestObject() {
 
 // Makes an Ajax GET request to 'requestUrl' - setting up the parameters of the request
 ajaxUtils.sendGetRequest =
-  function(requestUrl, responseHandler) {
+  function(requestUrl, responseHandler, isJsonResponse) {
     var request = getRequestObject();
     request.onreadystatechange =
       function() {
-        handleResponse(request, responseHandler);
+        handleResponse(request, responseHandler, isJsonResponse);
       };
     request.open("GET", requestUrl, true); //if set to false, makes this a synchronous request: the browswer will freeze and wait for the response from the server before doing anything else.  true makes it asynchronous
     request.send(null); // for POST only, executes the request and sends it to the server.  (null) is where you put the body of the request
@@ -38,10 +39,22 @@ ajaxUtils.sendGetRequest =
 // function if response is ready
 // and not an error
 function handleResponse(request,
-                        responseHandler) {
+                        responseHandler, isJsonResponse) {
   if ((request.readyState == 4) &&
      (request.status == 200)) {
-    responseHandler(request);
+
+    // Default to isJsonResponse = true
+    if (isJsonResponse == undefined) {
+      isJsonResponse = true;
+    }
+
+    if (isJsonResponse) {
+      responseHandler(JSON.parse(request.responseText))
+    }
+    else {
+      responseHandler(request.responseText);
+    }
+    // responseHandler(request);
   }
 }
 
