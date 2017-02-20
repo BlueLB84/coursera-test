@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",
   function (event) {
-
+// We're listening for the event when all these elements have loaded, so we are able to execute these functions and get element by id, and be sure that these elements already exist in the DOM
     function sayHello (event) {
       this.textContent = "Said it!"; //"this" is pointing to the button, so this line is changing the text content of the button when the sayHello function is executed, aka, the button is clicked
       var name =
